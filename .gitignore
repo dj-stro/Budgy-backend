@@ -46,3 +46,5 @@ target/
 .DS_Store
 Thumbs.db
 
+application.yml
+application.properties
