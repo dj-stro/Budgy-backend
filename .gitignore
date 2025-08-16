@@ -1,5 +1,4 @@
 HELP.md
-target/
 .mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
@@ -37,10 +36,6 @@ target/
 *.jar
 *.war
 *.log
-
-# IntelliJ IDEA files
-.idea/
-*.iml
 
 # OS system files
 .DS_Store
