@@ -1,8 +1,8 @@
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/bdb
-    username: budgdb
-    password: 8gx$j(WCV
+    username: db
+    password: changed
   jpa:
     hibernate:
       ddl-auto: update
