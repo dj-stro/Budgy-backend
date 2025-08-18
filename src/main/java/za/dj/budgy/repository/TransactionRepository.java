@@ -10,6 +10,6 @@ public interface TransactionRepository extends JpaRepository<Transaction,Long> {
 
     List<Transaction> findByUserId(Long userId);
 
-    Optional<Transaction> findByUserIdIn(List<Long> userIds);
+    List<Transaction> findByUserIdIn(List<Long> userIds);
 
 }

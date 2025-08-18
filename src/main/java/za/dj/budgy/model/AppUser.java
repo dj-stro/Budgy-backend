@@ -29,11 +29,11 @@ public class AppUser {
     private String password;
 
     @OneToMany(mappedBy = "user")
-    @JsonManagedReference
+    @JsonIgnore
     private List<Transaction> transactions;
 
     @OneToMany(mappedBy = "user")
-    @JsonManagedReference
+    @JsonIgnore
     private List<Account> accounts;
 }
 

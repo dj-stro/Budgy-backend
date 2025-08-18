@@ -30,7 +30,7 @@ public class TransactionServiceImpl implements TransactionService {
     }
 
     @Override
-    public Optional<Transaction> findByUserIdIn(List<Long> userIds) {
+    public List<Transaction> findByUserIdIn(List<Long> userIds) {
         return txnRepository.findByUserIdIn(userIds);
     }
 

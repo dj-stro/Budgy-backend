@@ -27,10 +27,16 @@ public class TransactionController {
         return txnService.findById(id).orElse(null);
     }
 
-    @GetMapping("/transactions")
-    public Optional<Transaction> getTransactions(@RequestParam List<Long> userIds) {
+    @GetMapping("/users")
+    public List<Transaction> getTransactionsByUserIsIn(@RequestParam List<Long> userIds) {
         return txnService.findByUserIdIn(userIds);
     }
+
+    @GetMapping("/user/{userId}")
+    public List<Transaction> getTransactionsByUserId(@PathVariable Long userId) {
+        return txnService.findByUserId(userId);
+    }
+
 
     @PostMapping
     public Transaction create(@RequestBody Transaction transaction){
