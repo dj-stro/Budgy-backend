@@ -1,45 +1,31 @@
-HELP.md
-.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+# Spring Boot Configuration
+/src/main/resources/application.yml
+/src/main/resources/application.properties
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
+# Maven/Gradle
+/target/
+/build/
 
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
-
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
-
-### VS Code ###
+# IDE
+.idea/
 .vscode/
+*.iml
+*.iws
+*.ipr
+*.class
 
-# Spring Boot build output
-target/
-*.jar
-*.war
+# Logs and runtime
 *.log
+logs/
 
-# OS system files
+# Operating System Files
 .DS_Store
 Thumbs.db
 
-application.yml
-application.properties
+# Spring Boot-specific
+*.jar
+*.war
+*.zip
+*.rar
+!**/src/main/**/build/
+!**/src/test/**/build/
