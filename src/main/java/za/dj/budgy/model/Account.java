@@ -31,7 +31,7 @@ public class Account {
 
     private BigDecimal budgetBalance;
 
-    private BigDecimal budgetAvailable;
+    //private BigDecimal budgetAvailable;
 
     private BigDecimal budgetAllowed;
 
